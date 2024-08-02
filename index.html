@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>ChatterSphere</title>
+</head>
+<body>
+    <!-- Inicio página principal -->
+    <section class="main-page"> <!-- En volvera todo el contenido de la página principal -->
+        <!-- Inicio lado izquierdo -->
+        <div class="left">
+            <div class="left-content">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <h3 class="left-content-heading">Encuentra temas y comunidades que te interesen.</h3>
+                </div>
+                <div>
+                    <i class="fas fa-comments"></i>
+                    <h3 class="left-content-heading">Sumérgete en las discusiones más vibrantes y actuales.</h3>
+                </div>
+                <div>
+                    <i class="fas fa-user-friends"></i>
+                    <h3 class="left-content-heading">Conéctate con personas que comparten tus intereses.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Fin lado izquierdo -->
+        <!-- Inicio lado derecho -->
+        <div class="right">
+            <form class="right-content-form">
+                <input type="text" class="user-info" placeholder="Email, télefono, usuario">
+                    <div>
+                        <input type="password" class="password" placeholder="password">
+                        <label>Contraseña olvidada</label>
+                    </div>
+                    <button type="button" class="btn-top">Iniciar Sesión</button>
+            </form>
+            <div class="middle-content">
+                <i class="fa-solid fa-masks-theater"></i>
+                <h1>Mantente al Tanto: Lo último en tendencias y novedades.</h1>
+                <h4>Únete a ChatterSphere y empieza a compartir.</h4>
+                <button type="button" class="sign-up main-btn">Regístrate</button>
+                <button type="button" class="log-in main-btn">Inicia Sesión</button>
+            </div>
+        </div>
+        <!-- Fin lado derecho -->
+        <!-- Inicio pie de pagina -->
+        <footer class="main-page-footer">
+            <ul>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Terminos y Condiciones</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Ajustes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Estado</a></li>
+                <li><a href="#">Politicas de privacidad</a></li>
+                <li><a href="#">Marca</a></li>
+                <li><a href="#">Desarrolladores</a></li>
+                <li><a href="#">&copy;2024 ChatterSphere</a></li>
+            </ul>
+        </footer>
+        <!-- Fin pie de pagina -->
+    </section>
+    <!-- *********************************** Fin página principal *********************************** -->
+
+    <!-- ***********************************  Inicio pagina de inicio de sesión ***********************************  -->
+    <section class="login-page">
+        <!-- Inicio de la navegación -->
+        <nav class="login-page-nav">
+            <ul>
+                <li class="brand"><a href="#"><i class="fa-solid fa-masks-theater"></i>Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Idioma: Español</a></li>
+            </ul>
+        </nav>
+        <!-- Fin de la navegación -->
+        
+        <!-- Inicio del login  -->
+        <div class="login">
+            <div class="login-content">
+                <h2>Accede a ChatterSphere</h2>
+                <form class="login-form">
+                    <input type="text" placeholder="Email, usuario o telefón" class="login-user-info">
+                    <input type="password" placeholder="Contraseña" class="login-password">
+                    <div>
+                        <button type="button" class="login-form-btn">Iniciar Sesión</button>
+                        <input type="checkbox" class="login-form-checkbox" id="check"> 
+                        <label for="check">Recordar</label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+            <footer class="login-footer">
+                <p>¿No tienes cuenta?  Únete a ChatterSphere y empieza a compartir. <a href="#">Regístrate ahora</a></p>
+                <p>¿Ya tienes cuenta?  Accede a tu cuenta para continuar la conversación. <a href="#">Inicia Sesión aqui</a></p>
+            </footer>
+        </div>
+        <!-- Fin del login -->
+        
+        <!-- Login modal -->
+        <div class="login-modal">
+            <i class="fas fa-times"></i>
+            <p>El nombre de usuario o la contraseña que ingreso no coinciden con nuestros registros. Verifique nuevamente y vuelva a intentarlo.</p>
+        </div>
+        <!-- Fin login modal -->
+    </section>
+    <!-- ***********************************  Fin pagina de inicio de sesión ***********************************  -->
+
+    <!-- ***********************************  Inicio pagina de noticias ***********************************  -->
+    <section class="feeds-page">
+        <!-- Inicio de navegación de paginas de noticias -->
+        <nav class="feeds-nav dark-mode-1">
+            <div class="icons">
+                <a href="" class="active"><i class="fa-solid fa-globe"></i></a>
+                <a href=""><i class="fa-solid fa-hashtag"></i></a>
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <a href=""><i class="fa-solid fa-comment-dots"></i></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search ChatterSphere" class="search-bar-input dark-mode-2 light-text border">
+            </div>
+            <div class="user">
+                <div class="user-img-wrapper">
+                    <img src="assets/imagenes/perfil.jpeg" alt="Mujer de piel negra">
+                </div>
+                <a href="#" class="user-link light-text">Mamoshita</a>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </nav>
+        <!-- Fin de navegación de paginas de noticias -->
+        
+        <!-- Inicio contenido de noticias -->
+        <div class="feeds-content dark-mode-2">
+            <div class="feeds-header dark-mode-1">
+                <div class="header-top border">
+                    <h4 class="light-text">Inicio</h4>
+                    <i class="fa-regular fa-face-grin-stars"></i>
+                </div>
+                <div class="header-post dark-mode-1 border">
+                    <div class="header-img-wrapper">
+                        <img src="assets/imagenes/perfil.jpeg" alt="Mujer de piel negra">
+                    </div>
+                    <input type="text" placeholder="Haz una publicación para iniciar un debate..." class="dark-mode-2 light-text border">
+                    <i class="fa-solid fa-icons"></i>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-solid fa-chart-bar"></i>
+                </div>
+            </div>
+            <!-- Fin contenido de noticias --> 
+
+            <!-- Inicio de publicaciones -->
+            <div class="posts dark-mode-1">
+                <div class="post border">
+                    <div class="user-avatar">
+                        <img src="assets/imagenes/unser2-1.jpeg" alt="Mujer de piel negra">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-user-info light-text">
+                            <h4>Valerin Ortiz</h4>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>@Valerin_Ortiz 15min</span>
+                        </div>
+                        <p class="post-text light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut, quo corrupti quos tempora blanditiis nesciunt? Architecto, autem vel ullam accusamus doloribus, itaque atque animi provident sint dignissimos deleniti soluta commodi at voluptates exercitationem error cum eaque voluptatibus nisi!</p>
+                        <div class="post-img">
+                            <img src="assets/imagenes/mamosita.jpg" alt="Mujer de piel morena">
+                        </div>
+                        <div class="post-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 2 -->
+                <div class="post border">
+                    <div class="user-avatar">
+                        <img src="assets/imagenes/cliente.jpeg" alt="Mujer de piel negra">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-user-info light-text">
+                            <h4>Maxterku</h4>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>@Maxterku 35min</span>
+                        </div>
+                        <p class="post-text light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut, quo corrupti quos tempora blanditiis nesciunt? Architecto, autem vel ullam accusamus doloribus, itaque atque animi provident sint dignissimos deleniti soluta commodi at voluptates exercitationem error cum eaque voluptatibus nisi!</p>
+                        <div class="post-img">
+                            <img src="assets/imagenes/1.jfif" alt="Paisaje">
+                        </div>
+                        <div class="post-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 3 -->
+                <div class="post border">
+                    <div class="user-avatar">
+                        <img src="assets/imagenes/psemod.jpg" alt="Mujer de piel negra">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-user-info light-text">
+                            <h4>Yajaira Murillo</h4>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>@Yajaira 40min</span>
+                        </div>
+                        <p class="post-text light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut, quo corrupti quos tempora blanditiis nesciunt? Architecto, autem vel ullam accusamus doloribus, itaque atque animi provident sint dignissimos deleniti soluta commodi at voluptates exercitationem error cum eaque voluptatibus nisi!</p>
+                        <div class="post-img">
+                            <img src="assets/imagenes/vestB.jpg" alt="Mujer de piel morena">
+                        </div>
+                        <div class="post-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 4 -->
+                <div class="post border">
+                    <div class="user-avatar">
+                        <img src="assets/imagenes/cliente3.jpeg" alt="Mujer de piel negra">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-user-info light-text">
+                            <h4>Juan Erneson</h4>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>@JuanE 1h 55min</span>
+                        </div>
+                        <p class="post-text light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut, quo corrupti quos tempora blanditiis nesciunt? Architecto, autem vel ullam accusamus doloribus, itaque atque animi provident sint dignissimos deleniti soluta commodi at voluptates exercitationem error cum eaque voluptatibus nisi!</p>
+                        <div class="post-img">
+                            <img src="assets/imagenes/pasje3.jpeg" alt="Mujer de piel morena">
+                        </div>
+                        <div class="post-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post border">
+                    <div class="user-avatar">
+                        <img src="assets/imagenes/she.jpeg" alt="Mujer de piel negra">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-user-info light-text">
+                            <h4>Teresa Gomez</h4>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>@TeresaG 2h 10min</span>
+                        </div>
+                        <p class="post-text light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut, quo corrupti quos tempora blanditiis nesciunt? Architecto, autem vel ullam accusamus doloribus, itaque atque animi provident sint dignissimos deleniti soluta commodi at voluptates exercitationem error cum eaque voluptatibus nisi!</p>
+                        <div class="post-img">
+                            <img src="assets/imagenes/OIG4.jpeg" alt="Mujer de piel morena">
+                        </div>
+                        <div class="post-icons">
+                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ***********************************  A quien seguir ***********************************  -->
+            <div class="follow dark-mode-1">
+                <h3 class="follow-heading light-text border">Sugerencias</h3>
+                <div class="follow-user border">
+                    <div class="follow-user-img">
+                        <img src="assets/imagenes/usuario1.jpg" alt="Mujer">
+                    </div>
+                    <div class="follow-user-info light-text">
+                        <h4>Karen Mendez</h4>
+                        <p>@Karen_Mendez</p>
+                    </div>
+                    <button type="button" class="follow-btn dark-mode-2">Seguir</button>
+                </div>
+                <!-- Segundo usuario -->
+                <div class="follow-user border">
+                    <div class="follow-user-img">
+                        <img src="assets/imagenes/usuario2.jpg" alt="Mujer">
+                    </div>
+                    <div class="follow-user-info light-text">
+                        <h4>Catalina Garcia</h4>
+                        <p>@Catalina_Garcia</p>
+                    </div>
+                    <button type="button" class="follow-btn dark-mode-2">Seguir</button>
+                </div>
+                <!-- Tercer usuario -->
+                <div class="follow-user border">
+                    <div class="follow-user-img">
+                        <img src="assets/imagenes/usuario3.jpg" alt="Mujer">
+                    </div>
+                    <div class="follow-user-info light-text">
+                        <h4>Karen Mendez</h4>
+                        <p>@Karen_Mendez</p>
+                    </div>
+                    <button type="button" class="follow-btn dark-mode-2">Seguir</button>
+                </div>
+                <!-- Cuarto usuario -->
+                <div class="follow-user border">
+                    <div class="follow-user-img">
+                        <img src="assets/imagenes/usuario4.jpg" alt="Hombre">
+                    </div>
+                    <div class="follow-user-info light-text">
+                        <h4>Cristhian Gonzalez</h4>
+                        <p>@C_Gonzalez</p>
+                    </div>
+                    <button type="button" class="follow-btn dark-mode-2">Seguir</button>
+                </div>
+                <!-- Quinto usuario -->
+                <div class="follow-user border">
+                    <div class="follow-user-img">
+                        <img src="assets/imagenes/usuario5.jpg" alt="Hombre">
+                    </div>
+                    <div class="follow-user-info light-text">
+                        <h4>Rauw Alejandro</h4>
+                        <p>@Rauw</p>
+                    </div>
+                    <button type="button" class="follow-btn dark-mode-2">Seguir</button>
+                </div>
+                <div class="follow-link">
+                    <a href="#">Mostrar todos</a>
+                </div>
+                <footer class="follow-footer dark-mode-2">
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Politicas</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Terminos</a></li>
+                        <li><a href="#">Más</a></li>
+                    </ul>
+                </footer>
+            </div> 
+            <!-- ***********************************  Fin A quien seguir ***********************************  -->
+        </div>
+        <!-- Fin de publicaciones -->
+        <button type="button" class="post-btn">
+            +<i class="fa-solid fa-feather-pointed"></i>
+            <p>post</p>
+        </button>
+        <!-- Post Modal -->
+        <!-- Este div lo estamos usando para deshabilitar la apgina cuando mostremos el modal -->
+        <div class="modal-wrapper">
+            <div class="modal dark-mode-1"> <!-- Esta clase modal va a envolver todo el contenido de la caja-->
+                <div class="modal-header border">
+                    <i class="fas fa-times"></i>
+                    <button type="button">Post</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img">
+                        <img src="assets/imagenes/perfil.jpeg" alt="Mujer de color negro">
+                    </div>
+                    <input type="text" placeholder="¿Que estas pensando?" class="modal-input dark-mode-2 light-text border">
+                    <i class="fa-solid fa-face-grin-squint-tears"></i>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-icons">
+                        <i class="fa-solid fa-icons"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Post Modal -->
+        
+        <!-- Barra lateral -->
+        <div class="sidebar-wrapper">
+            <div class="sidebar dark-mode-1">
+                <div class="sidebar-header border">
+                    <h2 class="light-text">Informacion de la cuenta</h2>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="sidebar-user">
+                    <div class="sidebar-user-img">
+                        <img src="assets/imagenes/perfil.jpeg" alt="Mujer de color negro">
+                    </div>
+                    <span>+</span>
+                </div>
+                <div class="sidebar-user-info light-text">
+                    <h4>Mamoshita</h4>
+                    <p>@Mamoshita</p>
+                </div>
+                <div class="following light-text">
+                    <p class="following-paragraph">
+                        <span>611</span> Siguiendo
+                    </p>
+                    <p class="following-paragraph">
+                        <span>8.2k</span> Seguidores
+                    </p>
+                </div>
+                <div class="sidebar-list-1 border">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>Perfil</a></li>
+                        <li><a href="#"><i class="fa-solid fa-list"></i>Listas</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i>Marcadores</a></li>
+                        <li><a href="#"><i class="fab fa-adversal"></i>Anuncios</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-list-2">
+                    <ul>
+                        <li><a href="#">Configuración y Privacidad</a></li>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+                <!-- Modo oscuro-->
+                <div class="dark-mode">
+                    <p>Modo oscuro</p>
+                    <div class="toggle">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin modo oscuro -->
+            </div>
+        </div>
+        <!-- Fin barra lateral -->
+    </section>
+    <!-- ***********************************  Fin pagina de noticias ***********************************  -->
+
+<!-- **************************************** SCRIPT **************************************** -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
